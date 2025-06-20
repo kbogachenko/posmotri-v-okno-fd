@@ -1,2 +1,1 @@
-Спринт 2. Курс Fullstack-разработчик от Яндекс-практикум.
-Проектная работа "Посмотри в окно"
+https://github.com/kbogachenko/posmotri-v-okno-fd
