@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -50,16 +53,9 @@ ol {
   background-color: #D9D9D9;
 }
 
-.page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .content {
   display: grid;
-  width: 1140px;
-  height: 534px;
+  widt h: 1140px;
   align-items: end;
   grid-template-columns: 711px 399px;
   grid-template-areas: 
@@ -80,6 +76,8 @@ ol {
 .content__list-container {
   height: 298px;
   overflow: auto;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .content__details {
@@ -151,8 +149,11 @@ ol {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
-  text-overflow: ellipsis;
+  width: 196px;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -160,7 +161,11 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
-  line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
 }
 
 .visually-hidden {
@@ -197,7 +202,7 @@ fieldset {
   border-width: 1px;
   border-style: solid;
   border-color: #ffffff transparent #ffffff transparent;
-  background-color: #1B1919;
+  background-color: transparent;
   appearance: none;
 }
 
@@ -237,7 +242,7 @@ fieldset {
 }
 
 .button {
-  border: 1px solid #ffffff;
+  border: 1px solid currentColor;
   height: 34px;
   background-color: transparent;
   color: #ffffff;
@@ -253,8 +258,6 @@ fieldset {
 
 .more-button {
   min-width: 100%;
-  /* width: 390px;
-  margin: 30px 3px 2px 2px;  этого в задании вроде как не было */
 }
 
 .button:hover {
@@ -293,6 +296,10 @@ fieldset {
   object-position: center;
 }
 
+.content__card-link {
+  display: block;
+}
+
 .content__card-link_current {
   background-color: #545050;
 }
@@ -315,10 +322,6 @@ fieldset {
   outline-offset: 1px;
 }
 
-.content__list-item {
-  padding-left: 3px;
-  padding-right: 3px;
-}
 
 .button,
 .search-form__label,
