@@ -55,7 +55,7 @@ ol {
 
 .content {
   display: grid;
-  widt h: 1140px;
+  width: 1140px;
   align-items: end;
   grid-template-columns: 711px 399px;
   grid-template-areas: 
