@@ -74,6 +74,9 @@ ol {
 }
 
 .content__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   height: 298px;
   overflow: auto;
   padding-left: 3px;
