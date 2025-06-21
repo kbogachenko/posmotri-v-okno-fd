@@ -246,7 +246,7 @@ fieldset {
 
 .button {
   border: 1px solid currentColor;
-  height: 34px;
+  min-height: 34px;
   background-color: transparent;
   color: #ffffff;
   font-family: 'Fira Sans Condensed', sans-serif;
